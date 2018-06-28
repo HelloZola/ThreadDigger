@@ -6,11 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="ThreadDigger" />
+        <module name="com.vi.study" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="ThreadDigger" target="1.5" />
+      <module name="com.vi.study" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

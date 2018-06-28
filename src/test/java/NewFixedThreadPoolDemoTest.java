@@ -1,6 +1,5 @@
+import com.dig.demo.newFixedThreadPool.MyThreadFactory;
 import com.dig.demo.newFixedThreadPool.NewFixedThreadPoolDemo;
-import jdk.jfr.events.ExceptionThrownEvent;
-import org.junit.Test;
 
 public class NewFixedThreadPoolDemoTest {
 
@@ -8,24 +7,32 @@ public class NewFixedThreadPoolDemoTest {
 
     public static void test1() {
 
-        NewFixedThreadPoolDemo demo  = NewFixedThreadPoolDemo.getThreadPoolInst();
+        NewFixedThreadPoolDemo demo = NewFixedThreadPoolDemo.getThreadPoolInst();
+        cycle(demo);
+    }
+
+    public static void cycle(NewFixedThreadPoolDemo demo){
         for (int i = 0; i < 10; i++) {
             demo.execute(new Runnable() {
                 public void run() {
                     try {
                         Thread.sleep(3000);
-                    } catch (Exception e){
+                    } catch (Exception e) {
                         e.printStackTrace();
                     }
-                    System.out.println("获取到的count："+count++);
+                    System.out.println("获取到的count：" + count++);
                 }
             });
         }
+    }
 
+    public static void test2() {
+        NewFixedThreadPoolDemo demo = NewFixedThreadPoolDemo.getThreadPoolInstWithThreadFactory(new MyThreadFactory());
+        cycle(demo);
     }
 
     public static void main(String[] args) {
-        test1();
+        test2();
     }
 
 

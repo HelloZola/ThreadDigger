@@ -13,7 +13,6 @@ public class NewFixedThreadPoolDemo {
 
     ExecutorService executorService = null;
 
-//    private final static int nThreads = Runtime.getRuntime().availableProcessors();
     private final static int nThreads = 2;
 
     private NewFixedThreadPoolDemo(int num) {
@@ -34,6 +33,15 @@ public class NewFixedThreadPoolDemo {
         synchronized (NewFixedThreadPoolDemo.class) {
             if (newFixedThreadPoolDemo == null) {
                 newFixedThreadPoolDemo = new NewFixedThreadPoolDemo(nThreads);
+            }
+            return newFixedThreadPoolDemo;
+        }
+    }
+
+    public static NewFixedThreadPoolDemo getThreadPoolInstWithThreadFactory(ThreadFactory threadFactory) {
+        synchronized (NewFixedThreadPoolDemo.class) {
+            if (newFixedThreadPoolDemo == null) {
+                newFixedThreadPoolDemo = new NewFixedThreadPoolDemo(nThreads,threadFactory);
             }
             return newFixedThreadPoolDemo;
         }
