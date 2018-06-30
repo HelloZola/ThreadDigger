@@ -1,6 +1,5 @@
 import com.dig.demo.newFixedThreadPool.MyThreadFactory;
-import com.dig.demo.newFixedThreadPool.NewScheduledThreadPoolDemo;
-import com.dig.demo.newFixedThreadPool.NewSingleThreadPoolDemo;
+import com.dig.demo.pool_demo.NewScheduledThreadPoolDemo;
 import com.dig.utils.TimeUtil;
 
 

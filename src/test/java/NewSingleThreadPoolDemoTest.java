@@ -1,6 +1,5 @@
 import com.dig.demo.newFixedThreadPool.MyThreadFactory;
-import com.dig.demo.newFixedThreadPool.NewSingleThreadPoolDemo;
-import com.dig.demo.newFixedThreadPool.NewnewCachedThreadPoolDemo;
+import com.dig.demo.pool_demo.NewSingleThreadPoolDemo;
 
 /**
  * @author 作者 E-mail:

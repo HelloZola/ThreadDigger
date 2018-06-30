@@ -1,6 +1,5 @@
 import com.dig.demo.newFixedThreadPool.MyThreadFactory;
-import com.dig.demo.newFixedThreadPool.NewSingleThreadPoolDemo;
-import com.dig.demo.newFixedThreadPool.NewWorkStealingPoolDemo;
+import com.dig.demo.pool_demo.NewWorkStealingPoolDemo;
 import com.dig.utils.TimeUtil;
 
 import java.util.Random;

@@ -1,5 +1,5 @@
 import com.dig.demo.newFixedThreadPool.MyThreadFactory;
-import com.dig.demo.newFixedThreadPool.NewFixedThreadPoolDemo;
+import com.dig.demo.pool_demo.NewFixedThreadPoolDemo;
 
 public class NewFixedThreadPoolDemoTest {
 

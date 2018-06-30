@@ -1,4 +1,4 @@
-package com.dig.demo.newFixedThreadPool;
+package com.dig.demo.pool_demo;
 
 import java.util.concurrent.*;
 
