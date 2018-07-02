@@ -1,4 +1,4 @@
-import com.dig.demo.newFixedThreadPool.MyThreadFactory;
+import com.dig.demo.pool_demo.MyThreadFactory;
 import com.dig.demo.pool_demo.NewnewCachedThreadPoolDemo;
 
 /**
