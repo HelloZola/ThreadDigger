@@ -65,7 +65,6 @@ public class ConditionDemo {
             System.out.println("我要释放锁了..."+Thread.currentThread().getName());
             lock.unlock();
         }
-
     }
 
 }
